@@ -7,14 +7,14 @@ function CartProvider(props){
     function rwmoveItemFromCartHandler(id){
 
     }
-    const CartContext={
+    const cartContext={
         items:[],
         totalAmount:0,
         addItem:addItemToCartHandler,
         removeItem:rwmoveItemFromCartHandler
     }
     return (
-        <CartContext.Provider value={CartContext}>{props.children}</CartContext.Provider>
+        <CartContext.Provider value={cartContext}>{props.children}</CartContext.Provider>
     )
 }
 export default CartProvider
